@@ -20,6 +20,7 @@ body {
 }
 
 .navbar {
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -61,6 +62,8 @@ a:hover {
 .hero {
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 90vh;
 }
 
 @media only screen and (max-width: 740px) {
@@ -151,6 +154,8 @@ img {
 }
 
 .footer {
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: #5a5560;
   display: flex;
   justify-content: center;
@@ -168,6 +173,9 @@ img {
 }
 
 footer {
+  max-width: 1200px;
+  margin: 0 auto;
+
   background-color: #46344e;
   color: #faed26;
 }
