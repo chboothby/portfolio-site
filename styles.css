@@ -20,6 +20,7 @@ body {
 }
 
 .navbar {
+  min-height: 10vh;
   max-width: 1200px;
   display: flex;
   flex-direction: row;
