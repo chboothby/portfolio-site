@@ -306,6 +306,10 @@ button {
     margin: 2vh auto;
   }
 
+  .about .description {
+    padding: 1rem;
+  }
+
   .portfolio-grid {
     display: flex;
     flex-flow: column wrap;
