@@ -300,6 +300,12 @@ button {
     flex-direction: column;
   }
 
+  .icons,
+  .skills-text {
+    width: 80vw;
+    margin: 2vh auto;
+  }
+
   .portfolio-grid {
     display: flex;
     flex-flow: column wrap;
