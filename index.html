@@ -12,16 +12,16 @@
     <!--HEADER SECTION-->
     <div class="navbar">
       <div class="nav_link logo">
-        <a href="index.html">CB</a>
+        <h1 id="logo">C|B</h1>
       </div>
       <div class="nav_link nav_link-toggle">
-        <a href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <a><i class="fa fa-bars" aria-hidden="true"></i></a>
       </div>
       <nav class="nav_list navbar_items">
         <div class="nav_link"><a href="index.html">home</a></div>
-        <div class="nav_link"><a href="about.html">about</a></div>
-        <div class="nav_link"><a href="portfolio.html">portfolio</a></div>
-        <div class="nav_link"><a href="contact.html">contact</a></div>
+        <div class="nav_link"><a href="#skills">about</a></div>
+        <div class="nav_link"><a href="#portfolio">portfolio</a></div>
+        <div class="nav_link"><a href="#contact">contact</a></div>
       </nav>
     </div>
     <div class="hero">
@@ -36,58 +36,64 @@
       </div>
     </div>
     <!-- SKILLS-->
-    <div class="skills">
-      <h1>languages and tools
+    <div class="skills" id="skills">
+      <h1>languages, tools & skills
       </h1>
+    <div class="skills-section">
       <div class="icons">
         <div class="icon">
-          <i class="fab fa-js-square"></i>
+          <i class="fab fa-js-square" title="JavaScript"></i>
         </div>
         <div class="icon">
-          <i class="fab fa-node-js"></i>
+          <i class="fab fa-node-js" title="Node.js"></i>
         </div>
         <div class="icon">
-          <i class="iconify" data-icon="cib:jest" data-inline="false"></i>
+          <i class="iconify" data-icon="cib:jest" data-inline="false" title="Jest"></i>
         </div>
         <div class="icon">
-          <i class="iconify" data-icon="logos:express" data-inline="false"></i>
+          <i class="iconify" data-icon="logos:express" data-inline="false"title="Express.js"></i>
         </div>
         <div class="icon">
-          <i class="iconify" data-icon="cib:postgresql" data-inline="false"></i>
+          <i class="iconify" data-icon="cib:postgresql" data-inline="false"title="PostgreSQL"></i>
         </div>
         <div class="icon">
-          <i class="iconify" data-icon="logos:knex" data-inline="false"></i>
+          <i class="iconify" data-icon="logos:knex" data-inline="false" title="Knex.js"></i>
         </div>
         <div class="icon">
-          <i class="iconify" data-icon="bx:bxl-react" data-inline="false"></i>
+          <i class="iconify" data-icon="bx:bxl-react" data-inline="false" title="React"></i>
         </div>
         <div class="icon">
-          <i class="iconify" data-icon="typcn:html5" data-inline="false"></i>
+          <i class="iconify" data-icon="typcn:html5" data-inline="false" title="HTML5"></i>
         </div>
         <div class="icon">
-          <i class="iconify" data-icon="bx:bxl-css3" data-inline="false"></i>
+          <i class="iconify" data-icon="bx:bxl-css3" data-inline="false" title="CSS3"></i>
         </div>
-        
-        
       </div>
+      <div class="skills-text">
+        <ul>
+          <li>Test-driven development</li>
+          <li>Pair programming & remote collaboration</li>
+          <li>Version control with Git & GitHub</li>
+        </ul>
+      </div>
+      </div>
+    
 
     </div>
     <!--ABOUT ME-->
     <div class="about">
-      <h1 >a bit about me...</h1>
+      <h1>about</h1>
       <div class="description">
         <p>I'm an innate problem solver and logical thinker with a passion for developing software. When I'm not building on my coding skills, you'll find me fell-running, cycling, baking sourdough or dreaming of the 8 months I spent volunteering with alaskan huskies in Lapland.</p>
-      <p> I took a break from Physiotherapy to pursue my dream of working with sled dogs in Northern Sweden. During my time here that I made the decision to leave my old profession behind and make the leap to software development. 
+      <p> I took a break from Physiotherapy to pursue a dream of working with sled dogs in Northern Sweden. During my time here I decided to leave my old profession behind and make the leap to software development. With no prior computer science experience, I saw this as an exciting opportunity to challenge myself and open up a whole new avenue of rewarding career paths. 
       </p>
-      <p>
-        My experience in healthcare has expanded my ability to think critically, communicate effectively with both other professionals and non-technical clients and recognise the importance of lifelong learning.
-      </p>
-      <p>Since day one of my coding journey, I have relished every minute. Reflecting week on week on how much I have learnt and the projects I have built gives me immense pride. I am incredibly excited to see where the rest of this journey will take me. </p>
+      <p>I have loved every minute of my fast-paced journey into software development. Reflecting each week on how much I have learned and the projects I have built has illustrated my capacity to learn new technologies quickly. I am inspired to see where the rest of this journey will take me.</p>
       </div>
     </div>
     <!--PORTFOLIO-->
-    <section class="portfolio">
+    <div class="portfolio" id="portfolio">
       <h1>my projects</h1>
+      <p>Take a look at some of my work below or visit my <span><a href="https://github.com/chboothby">github</a></span> directly</p>
       <div class="portfolio-grid">
         <div class="item item_1">
           <img src="/images/Screenshot from 2020-11-19 08-38-26.png" alt="screenshot of pokemon game">
@@ -123,27 +129,43 @@
         </div>
        
       </div>
-    </section>
+    </div>
   
     <!--CONTACT-->
+    <div class="contact" id="contact">
+      <h1>get in touch</h1>
+      <form class="contact-form" action="https://formspree.io/f/xgepzdre" method="POST">
+        <input type="text" name="name" placeholder="your name" required>
+        <input type="email" name="_replyto" placeholder="youremail@something.com" required>
+        <textarea name="message" id="message" rows="3" placeholder="hi Clara..." required></textarea>
+
+        <button type="submit" target="_blank">
+          <i class="far fa-paper-plane"></i>
+        </button>
+      </form>
+       </div>
+
+      </form>
+    </div>
+    <!--FOOTER-->
     <div class="footer">
       <ul>
         <li>
           <a href="mailto:clarahboothby@gmail.com"
-            ><i class="fa fa-envelope"></i
+            title="Email me directly"><i class="fa fa-envelope"></i
           ></a>
         </li>
         <li>
           <a
             href="https://www.linkedin.com/in/clara-boothby-6250a51b6/"
-            text="Connect with me on Linkedin"
+            title="Connect with me on Linkedin"
             ><i class="fab fa-linkedin"></i
           ></a>
         </li>
         <li>
           <a
             href="https://github.com/chboothby"
-            text="View some of my work on GitHub"
+            title="View some of my work on GitHub"
             ><i class="fab fa-github"></i
           ></a>
         </li>
